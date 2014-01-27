@@ -1,0 +1,13 @@
+diff --git a/Makefile.am b/Makefile.am
+index a484292..82cd7bf 100644
+--- a/Makefile.am
++++ b/Makefile.am
+@@ -133,7 +133,7 @@ libtsm_test_la_CPPFLAGS = $(AM_CPPFLAGS)
+ libtsm_la_LIBADD = libshl.la
+ libtsm_test_la_LIBADD = libshl.la
+ 
+-EXTRA_libtsm_la_DEPENDENCIES = $(top_srcdir)/docs/libtsm.sym
++libtsm_la_DEPENDENCIES = $(top_srcdir)/docs/libtsm.sym
+ 
+ libtsm_la_LDFLAGS = \
+ 	$(AM_LDFLAGS) \
